@@ -1,0 +1,24 @@
+- Verifying package.json 
+
+[32m✔[39m Verified package.json
+- Creating build context 
+
+[32m✔[39m Created build context
+Building javascript files:
+  format: cjs
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\plugin-users-permissions\bundle_cjs_0: [39m[36m./admin/src/index.js[39m [90m→[39m [36m./dist/admin/index.js[39m
+"freeze" is imported from external module "immer" but never used in "../../core/admin/dist/admin/ListPage-Czws5uiZ.mjs", "../../core/admin/dist/admin/Permissions-CuCHl6U_.mjs", "../../../node_modules/@reduxjs/toolkit/dist/query/rtk-query.esm.js", "admin/src/components/UsersPermissions/reducer.js", "admin/src/components/Permissions/reducer.js", "../../../node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js", "../../core/admin/dist/admin/EditViewPage-DEXY_GF9.mjs", "../../core/admin/dist/admin/Theme-Cw2LYZGD.mjs", "../../core/admin/dist/admin/index-1E5cXO-o.mjs" and "../../core/admin/dist/admin/AuthenticatedLayout-CGb9nz4W.mjs".
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: cjs)
+    [34m@strapi\plugin-users-permissions\bundle_cjs_0[39m: ./admin/src/index.js -> ./dist/admin/index.js
+Building javascript files:
+  format: es
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\plugin-users-permissions\bundle_esm_0: [39m[36m./admin/src/index.js[39m [90m→[39m [36m./dist/admin/index.mjs[39m
+"freeze" is imported from external module "immer" but never used in "admin/src/components/UsersPermissions/reducer.js", "../../core/admin/dist/admin/ListPage-Czws5uiZ.mjs", "../../../node_modules/@reduxjs/toolkit/dist/query/rtk-query.esm.js", "../../core/admin/dist/admin/Permissions-CuCHl6U_.mjs", "admin/src/components/Permissions/reducer.js", "../../../node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js", "../../core/admin/dist/admin/EditViewPage-DEXY_GF9.mjs", "../../core/admin/dist/admin/Theme-Cw2LYZGD.mjs", "../../core/admin/dist/admin/index-1E5cXO-o.mjs" and "../../core/admin/dist/admin/AuthenticatedLayout-CGb9nz4W.mjs".
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: es)
+    [34m@strapi\plugin-users-permissions\bundle_esm_0[39m: ./admin/src/index.js -> ./dist/admin/index.mjs

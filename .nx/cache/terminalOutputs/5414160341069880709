@@ -1,0 +1,81 @@
+- Verifying package.json 
+
+[32m✔[39m Verified package.json
+- Creating build context 
+
+[32m✔[39m Created build context
+Building type files:
+   entries:
+    – [32m@strapi\strapi\src\index.ts [39m[36m./src/index.ts[39m [90m->[39m [36m./dist/index.d.ts[39m
+    – [32m@strapi\strapi\src\cli\index.ts [39m[36m./src/cli/index.ts[39m [90m->[39m [36m./dist/cli/index.d.ts[39m
+    – [32m@strapi\strapi\src\admin.ts [39m[36m./src/admin.ts[39m [90m->[39m [36m./dist/admin.d.ts[39m
+    – [32m@strapi\strapi\src\admin-test.ts [39m[36m./src/admin-test.ts[39m [90m->[39m [36m./dist/admin-test.d.ts[39m
+[32m[SUCCESS] [39m Built types, entries:
+    [34m@strapi\strapi\src\index.ts[39m: ./src/index.ts -> ./dist/index.d.ts
+    [34m@strapi\strapi\src\cli\index.ts[39m: ./src/cli/index.ts -> ./dist/cli/index.d.ts
+    [34m@strapi\strapi\src\admin.ts[39m: ./src/admin.ts -> ./dist/admin.d.ts
+    [34m@strapi\strapi\src\admin-test.ts[39m: ./src/admin-test.ts -> ./dist/admin-test.d.ts
+Building javascript files:
+  format: cjs
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\strapi\bundle_cjs_0: [39m[36m./src/index.ts[39m [90m→[39m [36m./dist/index.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: cjs)
+    [34m@strapi\strapi\bundle_cjs_0[39m: ./src/index.ts -> ./dist/index.js
+Building javascript files:
+  format: es
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\strapi\bundle_esm_0: [39m[36m./src/index.ts[39m [90m→[39m [36m./dist/index.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: es)
+    [34m@strapi\strapi\bundle_esm_0[39m: ./src/index.ts -> ./dist/index.js
+Building javascript files:
+  format: cjs
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\strapi\bundle_cjs_1: [39m[36m./src/cli/index.ts[39m [90m→[39m [36m./dist/cli/index.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: cjs)
+    [34m@strapi\strapi\bundle_cjs_1[39m: ./src/cli/index.ts -> ./dist/cli/index.js
+Building javascript files:
+  format: es
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\strapi\bundle_esm_1: [39m[36m./src/cli/index.ts[39m [90m→[39m [36m./dist/cli/index.ts[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: es)
+    [34m@strapi\strapi\bundle_esm_1[39m: ./src/cli/index.ts -> ./dist/cli/index.ts
+Building javascript files:
+  format: cjs
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\strapi\bundle_cjs_2: [39m[36m./src/admin.ts[39m [90m→[39m [36m./dist/admin.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: cjs)
+    [34m@strapi\strapi\bundle_cjs_2[39m: ./src/admin.ts -> ./dist/admin.js
+Building javascript files:
+  format: es
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\strapi\bundle_esm_2: [39m[36m./src/admin.ts[39m [90m→[39m [36m./dist/admin.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: es)
+    [34m@strapi\strapi\bundle_esm_2[39m: ./src/admin.ts -> ./dist/admin.js
+Building javascript files:
+  format: cjs
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\strapi\bundle_cjs_3: [39m[36m./src/admin-test.ts[39m [90m→[39m [36m./dist/admin-test.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: cjs)
+    [34m@strapi\strapi\bundle_cjs_3[39m: ./src/admin-test.ts -> ./dist/admin-test.js
+Building javascript files:
+  format: es
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\strapi\bundle_esm_3: [39m[36m./src/admin-test.ts[39m [90m→[39m [36m./dist/admin-test.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: es)
+    [34m@strapi\strapi\bundle_esm_3[39m: ./src/admin-test.ts -> ./dist/admin-test.js

@@ -1,0 +1,4 @@
+ncc: Version 0.38.2
+ncc: Compiling file index.js into CJS
+980kB  dist\index.js
+980kB  [17163ms] - ncc 0.38.2

@@ -1,0 +1,252 @@
+- Verifying package.json 
+
+[32m✔[39m Verified package.json
+- Creating build context 
+
+[32m✔[39m Created build context
+Building type files:
+   entries:
+    – [32m@strapi\admin\_internal\index.ts [39m[36m./_internal/index.ts[39m [90m->[39m [36m./dist/_internal/index.d.ts[39m
+    – [32m@strapi\admin\server\src\index.ts [39m[36m./server/src/index.ts[39m [90m->[39m [36m./dist/server/src/index.d.ts[39m
+[32m[SUCCESS] [39m Built types, entries:
+    [34m@strapi\admin\_internal\index.ts[39m: ./_internal/index.ts -> ./dist/_internal/index.d.ts
+    [34m@strapi\admin\server\src\index.ts[39m: ./server/src/index.ts -> ./dist/server/src/index.d.ts
+Building javascript files:
+  format: cjs
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\admin\bundle_cjs_0: [39m[36m./_internal/index.ts[39m [90m→[39m [36m./dist/_internal.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: cjs)
+    [34m@strapi\admin\bundle_cjs_0[39m: ./_internal/index.ts -> ./dist/_internal.js
+Building javascript files:
+  format: es
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\admin\bundle_esm_0: [39m[36m./_internal/index.ts[39m [90m→[39m [36m./dist/_internal.mjs[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: es)
+    [34m@strapi\admin\bundle_esm_0[39m: ./_internal/index.ts -> ./dist/_internal.mjs
+Building javascript files:
+  format: cjs
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\admin\bundle_cjs_1: [39m[36m./server/src/index.ts[39m [90m→[39m [36m./dist/server/index.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: cjs)
+    [34m@strapi\admin\bundle_cjs_1[39m: ./server/src/index.ts -> ./dist/server/index.js
+Building javascript files:
+  format: es
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\admin\bundle_esm_1: [39m[36m./server/src/index.ts[39m [90m→[39m [36m./dist/server/index.mjs[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: es)
+    [34m@strapi\admin\bundle_esm_1[39m: ./server/src/index.ts -> ./dist/server/index.mjs
+[36mvite v5.2.14 [32mbuilding for production...[36m[39m
+[96madmin/src/router.tsx[0m:[93m37[0m:[93m41[0m - [91merror[0m[90m TS2306: [0mFile 'C:/Users/aswini.u/Desktop/strapi/strapi/packages/core/admin/admin/src/pages/HomePage.tsx' is not a module.
+
+[7m37[0m       const { HomePage } = await import('./pages/HomePage');
+[7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~~[0m
+[96mee/admin/src/pages/HomePage.tsx[0m:[93m1[0m:[93m28[0m - [91merror[0m[90m TS2306: [0mFile 'C:/Users/aswini.u/Desktop/strapi/strapi/packages/core/admin/admin/src/pages/HomePage.tsx' is not a module.
+
+[7m1[0m import { HomePageCE } from '../../../../admin/src/pages/HomePage';
+[7m [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+transforming...
+[32m✓[39m 584 modules transformed.
+Generated an empty chunk: "HomePage".
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+computing gzip size...
+[2mdist/admin/[22m[36mHomePage-l0sNRNKZ.mjs              [39m[1m[2m    0.05 kB[22m[1m[22m[2m │ gzip:   0.07 kB[22m[2m │ map:     0.10 kB[22m
+[2mdist/admin/[22m[36men-GB-O6Z7xiyi.mjs                 [39m[1m[2m    0.11 kB[22m[1m[22m[2m │ gzip:   0.12 kB[22m[2m │ map:     0.10 kB[22m
+[2mdist/admin/[22m[36mee.mjs                             [39m[1m[2m    0.17 kB[22m[1m[22m[2m │ gzip:   0.14 kB[22m[2m │ map:     0.09 kB[22m
+[2mdist/admin/[22m[36mconstants-CRj0ViV1.mjs             [39m[1m[2m    0.19 kB[22m[1m[22m[2m │ gzip:   0.15 kB[22m[2m │ map:     0.32 kB[22m
+[2mdist/admin/[22m[36museOnce-NHeEacbN.mjs               [39m[1m[2m    0.19 kB[22m[1m[22m[2m │ gzip:   0.16 kB[22m[2m │ map:     0.46 kB[22m
+[2mdist/admin/[22m[36mselectors-pHipySOe.mjs             [39m[1m[2m    0.25 kB[22m[1m[22m[2m │ gzip:   0.19 kB[22m[2m │ map:     0.57 kB[22m
+[2mdist/admin/[22m[36mCreateView-BW4atUvI.mjs            [39m[1m[2m    0.52 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m[2m │ map:     0.91 kB[22m
+[2mdist/admin/[22m[36mCreateView-DzCHAixM.mjs            [39m[1m[2m    0.52 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m[2m │ map:     0.91 kB[22m
+[2mdist/admin/[22m[36mCreatePage-BRD18XNu.mjs            [39m[1m[2m    0.54 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m[2m │ map:     0.94 kB[22m
+[2mdist/admin/[22m[36mModalForm-B9SUkQ1l.mjs             [39m[1m[2m    0.57 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m[2m │ map:     1.43 kB[22m
+[2mdist/admin/[22m[36mPrivateRoute-DWxFhes2.mjs          [39m[1m[2m    0.64 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m[2m │ map:     1.37 kB[22m
+[2mdist/admin/[22m[36museLicenseLimits-BsqWmbk9.mjs      [39m[1m[2m    0.71 kB[22m[1m[22m[2m │ gzip:   0.38 kB[22m[2m │ map:     1.91 kB[22m
+[2mdist/admin/[22m[36museAdminRoles-ELrpo24l.mjs         [39m[1m[2m    0.75 kB[22m[1m[22m[2m │ gzip:   0.42 kB[22m[2m │ map:     2.03 kB[22m
+[2mdist/admin/[22m[36musers-8N93LH7R.mjs                 [39m[1m[2m    0.86 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m[2m │ map:     2.69 kB[22m
+[2mdist/admin/[22m[36mindex.mjs                          [39m[1m[2m    0.95 kB[22m[1m[22m[2m │ gzip:   0.52 kB[22m[2m │ map:     0.09 kB[22m
+[2mdist/admin/[22m[36museEnterprise-BGzVPL4w.mjs         [39m[1m[2m    0.98 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m[2m │ map:     3.07 kB[22m
+[2mdist/admin/[22m[36mEventsTable-CA9OgDR3.mjs           [39m[1m[2m    1.07 kB[22m[1m[22m[2m │ gzip:   0.48 kB[22m[2m │ map:     2.16 kB[22m
+[2mdist/admin/[22m[36mMagicLinkEE-C1viLha4.mjs           [39m[1m[2m    1.08 kB[22m[1m[22m[2m │ gzip:   0.52 kB[22m[2m │ map:     2.20 kB[22m
+[2mdist/admin/[22m[36mLogin-C2Mw7cam.mjs                 [39m[1m[2m    1.57 kB[22m[1m[22m[2m │ gzip:   0.69 kB[22m[2m │ map:     2.91 kB[22m
+[2mdist/admin/[22m[36mCreateActionEE-Bz3zvzzy.mjs        [39m[1m[2m    1.64 kB[22m[1m[22m[2m │ gzip:   0.72 kB[22m[2m │ map:     2.95 kB[22m
+[2mdist/admin/[22m[36mvalidation-BmEJ7fpv.mjs            [39m[1m[2m    1.72 kB[22m[1m[22m[2m │ gzip:   0.59 kB[22m[2m │ map:     3.98 kB[22m
+[2mdist/admin/[22m[36mPurchaseSingleSignOn-D0S9FHMv.mjs  [39m[1m[2m    1.86 kB[22m[1m[22m[2m │ gzip:   0.75 kB[22m[2m │ map:     3.07 kB[22m
+[2mdist/admin/[22m[36mPurchaseAuditLogs-DvxRk7RI.mjs     [39m[1m[2m    1.86 kB[22m[1m[22m[2m │ gzip:   0.76 kB[22m[2m │ map:     3.03 kB[22m
+[2mdist/admin/[22m[36mAuthResponse-DPn9gip-.mjs          [39m[1m[2m    1.87 kB[22m[1m[22m[2m │ gzip:   0.85 kB[22m[2m │ map:     3.98 kB[22m
+[2mdist/admin/[22m[36mapiTokens-BbGEd8hG.mjs             [39m[1m[2m    1.91 kB[22m[1m[22m[2m │ gzip:   0.58 kB[22m[2m │ map:     4.79 kB[22m
+[2mdist/admin/[22m[36mtransferTokens-DRhm3E2K.mjs        [39m[1m[2m    2.39 kB[22m[1m[22m[2m │ gzip:   0.65 kB[22m[2m │ map:     5.97 kB[22m
+[2mdist/admin/[22m[36mSSOProviders-BD7LHrkI.mjs          [39m[1m[2m    2.77 kB[22m[1m[22m[2m │ gzip:   0.97 kB[22m[2m │ map:     6.42 kB[22m
+[2mdist/admin/[22m[36museWebhooks-ChRqPd68.mjs           [39m[1m[2m    2.83 kB[22m[1m[22m[2m │ gzip:   0.84 kB[22m[2m │ map:     8.05 kB[22m
+[2mdist/admin/[22m[36mconstants-CiZXJ_5W.mjs             [39m[1m[2m    3.07 kB[22m[1m[22m[2m │ gzip:   1.04 kB[22m[2m │ map:     6.18 kB[22m
+[2mdist/admin/[22m[36mListPage-CuSq9YAy.mjs              [39m[1m[2m    3.24 kB[22m[1m[22m[2m │ gzip:   1.15 kB[22m[2m │ map:     5.79 kB[22m
+[2mdist/admin/[22m[36mAdminSeatInfo-Dq608qZK.mjs         [39m[1m[2m    3.66 kB[22m[1m[22m[2m │ gzip:   1.42 kB[22m[2m │ map:     6.29 kB[22m
+[2mdist/admin/[22m[36mInstalledPlugins-CiBTObSY.mjs      [39m[1m[2m    3.90 kB[22m[1m[22m[2m │ gzip:   1.14 kB[22m[2m │ map:     7.75 kB[22m
+[2mdist/admin/[22m[36mSelectRoles-DB5oPLBj.mjs           [39m[1m[2m    3.96 kB[22m[1m[22m[2m │ gzip:   1.43 kB[22m[2m │ map:     8.26 kB[22m
+[2mdist/admin/[22m[36mUseCasePage-Y-mdM2Wr.mjs           [39m[1m[2m    5.23 kB[22m[1m[22m[2m │ gzip:   1.71 kB[22m[2m │ map:    10.44 kB[22m
+[2mdist/admin/[22m[36mListView-DV860ejj.mjs              [39m[1m[2m    6.67 kB[22m[1m[22m[2m │ gzip:   1.93 kB[22m[2m │ map:    12.88 kB[22m
+[2mdist/admin/[22m[36mTable-Tm5XxNoq.mjs                 [39m[1m[2m    6.69 kB[22m[1m[22m[2m │ gzip:   2.17 kB[22m[2m │ map:    16.96 kB[22m
+[2mdist/admin/[22m[36mListView-DvU5a2gt.mjs              [39m[1m[2m    6.87 kB[22m[1m[22m[2m │ gzip:   1.95 kB[22m[2m │ map:    13.62 kB[22m
+[2mdist/admin/[22m[36mLayout-D4-M-Plf.mjs                [39m[1m[2m    6.96 kB[22m[1m[22m[2m │ gzip:   2.27 kB[22m[2m │ map:    16.92 kB[22m
+[2mdist/admin/[22m[36madmin-CuE4OEl1.mjs                 [39m[1m[2m    9.45 kB[22m[1m[22m[2m │ gzip:   2.38 kB[22m[2m │ map:    28.17 kB[22m
+[2mdist/admin/[22m[36mSingleSignOnPage-D2mxN9wf.mjs      [39m[1m[2m    9.62 kB[22m[1m[22m[2m │ gzip:   2.51 kB[22m[2m │ map:    19.00 kB[22m
+[2mdist/admin/[22m[36mListPage-DjwNl39M.mjs              [39m[1m[2m    9.98 kB[22m[1m[22m[2m │ gzip:   2.73 kB[22m[2m │ map:    22.36 kB[22m
+[2mdist/admin/[22m[36mEditPage-vRIzIivk.mjs              [39m[1m[2m   10.17 kB[22m[1m[22m[2m │ gzip:   2.73 kB[22m[2m │ map:    20.27 kB[22m
+[2mdist/admin/[22m[36mCreatePage-mgccyGeS.mjs            [39m[1m[2m   10.41 kB[22m[1m[22m[2m │ gzip:   2.75 kB[22m[2m │ map:    20.66 kB[22m
+[2mdist/admin/[22m[36mcs-DrRkodPD.mjs                    [39m[1m[2m   10.95 kB[22m[1m[22m[2m │ gzip:   3.84 kB[22m[2m │ map:     0.26 kB[22m
+[2mdist/admin/[22m[36mEditPage-B0gVp6ZA.mjs              [39m[1m[2m   11.23 kB[22m[1m[22m[2m │ gzip:   2.93 kB[22m[2m │ map:    22.08 kB[22m
+[2mdist/admin/[22m[36mTokenTypeSelect-BVtbUHje.mjs       [39m[1m[2m   11.93 kB[22m[1m[22m[2m │ gzip:   2.92 kB[22m[2m │ map:    27.21 kB[22m
+[2mdist/admin/[22m[36mEditView-AdO6Xcay.mjs              [39m[1m[2m   12.00 kB[22m[1m[22m[2m │ gzip:   3.06 kB[22m[2m │ map:    24.97 kB[22m
+[2mdist/admin/[22m[36mvi-CGrr4ioy.mjs                    [39m[1m[2m   12.20 kB[22m[1m[22m[2m │ gzip:   4.28 kB[22m[2m │ map:     0.28 kB[22m
+[2mdist/admin/[22m[36muk-Ud9QNfkB.mjs                    [39m[1m[2m   12.99 kB[22m[1m[22m[2m │ gzip:   4.96 kB[22m[2m │ map:     0.30 kB[22m
+[2mdist/admin/[22m[36mms-eMDSLvhl.mjs                    [39m[1m[2m   13.17 kB[22m[1m[22m[2m │ gzip:   4.02 kB[22m[2m │ map:     0.30 kB[22m
+[2mdist/admin/[22m[36mpt-8dwKSOn3.mjs                    [39m[1m[2m   13.60 kB[22m[1m[22m[2m │ gzip:   4.27 kB[22m[2m │ map:     0.30 kB[22m
+[2mdist/admin/[22m[36mListPage-Cx1jFY18.mjs              [39m[1m[2m   13.98 kB[22m[1m[22m[2m │ gzip:   2.89 kB[22m[2m │ map:    27.33 kB[22m
+[2mdist/admin/[22m[36mProfilePage-DwE98A3Q.mjs           [39m[1m[2m   14.27 kB[22m[1m[22m[2m │ gzip:   3.21 kB[22m[2m │ map:    28.66 kB[22m
+[2mdist/admin/[22m[36mListPage-CrumFDML.mjs              [39m[1m[2m   16.97 kB[22m[1m[22m[2m │ gzip:   4.13 kB[22m[2m │ map:    37.78 kB[22m
+[2mdist/admin/[22m[36mth-BG3IOCqV.mjs                    [39m[1m[2m   17.70 kB[22m[1m[22m[2m │ gzip:   6.26 kB[22m[2m │ map:     0.38 kB[22m
+[2mdist/admin/[22m[36mhe-C3w9omDw.mjs                    [39m[1m[2m   18.82 kB[22m[1m[22m[2m │ gzip:   6.20 kB[22m[2m │ map:     0.41 kB[22m
+[2mdist/admin/[22m[36mid-cH3Ovozx.mjs                    [39m[1m[2m   18.82 kB[22m[1m[22m[2m │ gzip:   5.30 kB[22m[2m │ map:     0.39 kB[22m
+[2mdist/admin/[22m[36mno-9TbSG07o.mjs                    [39m[1m[2m   19.22 kB[22m[1m[22m[2m │ gzip:   5.59 kB[22m[2m │ map:     0.40 kB[22m
+[2mdist/admin/[22m[36mListPage-TSypU5NS.mjs              [39m[1m[2m   19.54 kB[22m[1m[22m[2m │ gzip:   4.67 kB[22m[2m │ map:    42.93 kB[22m
+[2mdist/admin/[22m[36mit-T1rZP3NX.mjs                    [39m[1m[2m   19.62 kB[22m[1m[22m[2m │ gzip:   5.63 kB[22m[2m │ map:     0.40 kB[22m
+[2mdist/admin/[22m[36mko-D1e-SMHS.mjs                    [39m[1m[2m   24.52 kB[22m[1m[22m[2m │ gzip:   8.57 kB[22m[2m │ map:     0.53 kB[22m
+[2mdist/admin/[22m[36mja-Cc9Dg_QK.mjs                    [39m[1m[2m   25.53 kB[22m[1m[22m[2m │ gzip:   9.01 kB[22m[2m │ map:     0.53 kB[22m
+[2mdist/admin/[22m[36mEditPage-BE4qD3mi.mjs              [39m[1m[2m   26.46 kB[22m[1m[22m[2m │ gzip:   6.29 kB[22m[2m │ map:    61.79 kB[22m
+[2mdist/admin/[22m[36mApplicationInfoPage-R0Vuk0R-.mjs   [39m[1m[2m   27.31 kB[22m[1m[22m[2m │ gzip:   5.65 kB[22m[2m │ map:    55.50 kB[22m
+[2mdist/admin/[22m[36mdk-Cv0jDfcZ.mjs                    [39m[1m[2m   28.28 kB[22m[1m[22m[2m │ gzip:   7.76 kB[22m[2m │ map:     0.53 kB[22m
+[2mdist/admin/[22m[36mEditViewPage-Ch2Vfp6q.mjs          [39m[1m[2m   28.48 kB[22m[1m[22m[2m │ gzip:   6.49 kB[22m[2m │ map:    66.61 kB[22m
+[2mdist/admin/[22m[36mgu-CSS25C49.mjs                    [39m[1m[2m   29.72 kB[22m[1m[22m[2m │ gzip:   9.74 kB[22m[2m │ map:     0.53 kB[22m
+[2mdist/admin/[22m[36msk-DQ2qpsG2.mjs                    [39m[1m[2m   31.08 kB[22m[1m[22m[2m │ gzip:   8.80 kB[22m[2m │ map:     0.58 kB[22m
+[2mdist/admin/[22m[36mzh-LqPg8hbL.mjs                    [39m[1m[2m   33.31 kB[22m[1m[22m[2m │ gzip:  11.81 kB[22m[2m │ map:     0.72 kB[22m
+[2mdist/admin/[22m[36mMarketplacePage-BkiSxGiK.mjs       [39m[1m[2m   34.57 kB[22m[1m[22m[2m │ gzip:   7.95 kB[22m[2m │ map:    76.11 kB[22m
+[2mdist/admin/[22m[36mpl-B0hZgHvQ.mjs                    [39m[1m[2m   35.16 kB[22m[1m[22m[2m │ gzip:  10.23 kB[22m[2m │ map:     0.62 kB[22m
+[2mdist/admin/[22m[36mhi-DW2CutdA.mjs                    [39m[1m[2m   35.26 kB[22m[1m[22m[2m │ gzip:  11.79 kB[22m[2m │ map:     0.62 kB[22m
+[2mdist/admin/[22m[36msa-CHD-r_h-.mjs                    [39m[1m[2m   35.80 kB[22m[1m[22m[2m │ gzip:  11.99 kB[22m[2m │ map:     0.62 kB[22m
+[2mdist/admin/[22m[36mde-D0NA2abW.mjs                    [39m[1m[2m   35.89 kB[22m[1m[22m[2m │ gzip:   9.88 kB[22m[2m │ map:     0.61 kB[22m
+[2mdist/admin/[22m[36mca-f06Q0InB.mjs                    [39m[1m[2m   36.33 kB[22m[1m[22m[2m │ gzip:  10.05 kB[22m[2m │ map:     0.62 kB[22m
+[2mdist/admin/[22m[36mml-FLft_QIc.mjs                    [39m[1m[2m   37.35 kB[22m[1m[22m[2m │ gzip:  12.12 kB[22m[2m │ map:     0.62 kB[22m
+[2mdist/admin/[22m[36mfr-CKlZ-5Zr.mjs                    [39m[1m[2m   38.03 kB[22m[1m[22m[2m │ gzip:   9.88 kB[22m[2m │ map:     0.65 kB[22m
+[2mdist/admin/[22m[36mtr-Dq45DRRZ.mjs                    [39m[1m[2m   38.52 kB[22m[1m[22m[2m │ gzip:  10.89 kB[22m[2m │ map:     0.68 kB[22m
+[2mdist/admin/[22m[36mzh-Hans-C44LvcXE.mjs               [39m[1m[2m   38.60 kB[22m[1m[22m[2m │ gzip:  13.11 kB[22m[2m │ map:     0.82 kB[22m
+[2mdist/admin/[22m[36mpt-BR-BDpWvCrQ.mjs                 [39m[1m[2m   41.05 kB[22m[1m[22m[2m │ gzip:  11.12 kB[22m[2m │ map:     0.69 kB[22m
+[2mdist/admin/[22m[36mes-t8XFZqIM.mjs                    [39m[1m[2m   41.94 kB[22m[1m[22m[2m │ gzip:  11.37 kB[22m[2m │ map:     0.69 kB[22m
+[2mdist/admin/[22m[36msv-D0vPVUAT.mjs                    [39m[1m[2m   42.29 kB[22m[1m[22m[2m │ gzip:  11.38 kB[22m[2m │ map:     0.72 kB[22m
+[2mdist/admin/[22m[36mnl-CubaFTJw.mjs                    [39m[1m[2m   43.70 kB[22m[1m[22m[2m │ gzip:  11.63 kB[22m[2m │ map:     0.72 kB[22m
+[2mdist/admin/[22m[36mhu-DaDd6FHR.mjs                    [39m[1m[2m   44.14 kB[22m[1m[22m[2m │ gzip:  12.34 kB[22m[2m │ map:     0.72 kB[22m
+[2mdist/admin/[22m[36meu-CDMMTSys.mjs                    [39m[1m[2m   44.34 kB[22m[1m[22m[2m │ gzip:  11.47 kB[22m[2m │ map:     0.72 kB[22m
+[2mdist/admin/[22m[36mTheme-DQRUlj-X.mjs                 [39m[1m[2m   44.80 kB[22m[1m[22m[2m │ gzip:  10.97 kB[22m[2m │ map:   138.74 kB[22m
+[2mdist/admin/[22m[36mAuthenticatedLayout-pPdBhoMx.mjs   [39m[1m[2m   49.02 kB[22m[1m[22m[2m │ gzip:  14.73 kB[22m[2m │ map:    93.20 kB[22m
+[2mdist/admin/[22m[36mru-C34i9wJx.mjs                    [39m[1m[2m   53.83 kB[22m[1m[22m[2m │ gzip:  16.21 kB[22m[2m │ map:     0.84 kB[22m
+[2mdist/admin/[22m[36men-BXrZ-rxH.mjs                    [39m[1m[2m   54.06 kB[22m[1m[22m[2m │ gzip:  12.96 kB[22m[2m │ map:     0.88 kB[22m
+[2mdist/admin/[22m[36mar-7vbwrPth.mjs                    [39m[1m[2m   57.49 kB[22m[1m[22m[2m │ gzip:  16.76 kB[22m[2m │ map:     0.93 kB[22m
+[2mdist/admin/[22m[36mPermissions-DQUqSN3m.mjs           [39m[1m[2m   71.15 kB[22m[1m[22m[2m │ gzip:  13.76 kB[22m[2m │ map:   175.60 kB[22m
+[2mdist/admin/[22m[36mindex-DdAmwxFa.mjs                 [39m[1m[2m  183.95 kB[22m[1m[22m[2m │ gzip:  40.12 kB[22m[2m │ map:   467.42 kB[22m
+[2mdist/admin/[22m[36mtest.mjs                           [39m[1m[33m1,070.62 kB[39m[22m[2m │ gzip: 226.07 kB[22m[2m │ map: 2,067.09 kB[22m
+[vite:dts] Declaration files built in 60631ms.
+
+Generated an empty chunk: "HomePage".
+[2mdist/admin/[22m[36mHomePage-Ci8RuVX2.js              [39m[1m[2m    0.06 kB[22m[1m[22m[2m │ gzip:   0.08 kB[22m[2m │ map:     0.10 kB[22m
+[2mdist/admin/[22m[36men-GB-4Ci5UqwF.js                 [39m[1m[2m    0.21 kB[22m[1m[22m[2m │ gzip:   0.19 kB[22m[2m │ map:     0.11 kB[22m
+[2mdist/admin/[22m[36mconstants-DF68OPrs.js             [39m[1m[2m    0.24 kB[22m[1m[22m[2m │ gzip:   0.16 kB[22m[2m │ map:     0.32 kB[22m
+[2mdist/admin/[22m[36mselectors-DfiZULhE.js             [39m[1m[2m    0.27 kB[22m[1m[22m[2m │ gzip:   0.19 kB[22m[2m │ map:     0.60 kB[22m
+[2mdist/admin/[22m[36mee.js                             [39m[1m[2m    0.37 kB[22m[1m[22m[2m │ gzip:   0.23 kB[22m[2m │ map:     0.10 kB[22m
+[2mdist/admin/[22m[36mCreateView-mdrb1xBZ.js            [39m[1m[2m    0.65 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m[2m │ map:     0.96 kB[22m
+[2mdist/admin/[22m[36mCreateView-u_26ovhL.js            [39m[1m[2m    0.66 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m[2m │ map:     0.96 kB[22m
+[2mdist/admin/[22m[36mCreatePage-CutiuxWc.js            [39m[1m[2m    0.68 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m[2m │ map:     0.99 kB[22m
+[2mdist/admin/[22m[36museOnce-C7EQufL3.js               [39m[1m[2m    0.70 kB[22m[1m[22m[2m │ gzip:   0.43 kB[22m[2m │ map:     0.49 kB[22m
+[2mdist/admin/[22m[36mPrivateRoute-m4bg0tNv.js          [39m[1m[2m    0.70 kB[22m[1m[22m[2m │ gzip:   0.41 kB[22m[2m │ map:     1.42 kB[22m
+[2mdist/admin/[22m[36mModalForm-DukjfMMw.js             [39m[1m[2m    0.70 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m[2m │ map:     1.44 kB[22m
+[2mdist/admin/[22m[36musers-DaPfjlwf.js                 [39m[1m[2m    0.90 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m[2m │ map:     2.69 kB[22m
+[2mdist/admin/[22m[36mMagicLinkEE-BKqXkRzw.js           [39m[1m[2m    1.23 kB[22m[1m[22m[2m │ gzip:   0.59 kB[22m[2m │ map:     2.26 kB[22m
+[2mdist/admin/[22m[36museLicenseLimits-JFp6koHQ.js      [39m[1m[2m    1.24 kB[22m[1m[22m[2m │ gzip:   0.62 kB[22m[2m │ map:     1.97 kB[22m
+[2mdist/admin/[22m[36mEventsTable-CpekozX5.js           [39m[1m[2m    1.29 kB[22m[1m[22m[2m │ gzip:   0.53 kB[22m[2m │ map:     2.21 kB[22m
+[2mdist/admin/[22m[36museAdminRoles-CATv1LQ3.js         [39m[1m[2m    1.32 kB[22m[1m[22m[2m │ gzip:   0.68 kB[22m[2m │ map:     2.11 kB[22m
+[2mdist/admin/[22m[36museEnterprise-ijNnK53J.js         [39m[1m[2m    1.56 kB[22m[1m[22m[2m │ gzip:   0.69 kB[22m[2m │ map:     3.12 kB[22m
+[2mdist/admin/[22m[36mLogin-Bo9u-woP.js                 [39m[1m[2m    1.88 kB[22m[1m[22m[2m │ gzip:   0.76 kB[22m[2m │ map:     3.05 kB[22m
+[2mdist/admin/[22m[36mapiTokens-rxLmW4xI.js             [39m[1m[2m    2.06 kB[22m[1m[22m[2m │ gzip:   0.59 kB[22m[2m │ map:     4.81 kB[22m
+[2mdist/admin/[22m[36mindex.js                          [39m[1m[2m    2.06 kB[22m[1m[22m[2m │ gzip:   0.67 kB[22m[2m │ map:     0.14 kB[22m
+[2mdist/admin/[22m[36mPurchaseAuditLogs-BZOghVfD.js     [39m[1m[2m    2.10 kB[22m[1m[22m[2m │ gzip:   0.83 kB[22m[2m │ map:     3.16 kB[22m
+[2mdist/admin/[22m[36mPurchaseSingleSignOn-BlWPzR0o.js  [39m[1m[2m    2.10 kB[22m[1m[22m[2m │ gzip:   0.82 kB[22m[2m │ map:     3.20 kB[22m
+[2mdist/admin/[22m[36mvalidation-BMTxam3d.js            [39m[1m[2m    2.36 kB[22m[1m[22m[2m │ gzip:   0.84 kB[22m[2m │ map:     4.02 kB[22m
+[2mdist/admin/[22m[36mCreateActionEE-BnGBSrSz.js        [39m[1m[2m    2.53 kB[22m[1m[22m[2m │ gzip:   1.03 kB[22m[2m │ map:     3.10 kB[22m
+[2mdist/admin/[22m[36mAuthResponse-DREC3O4E.js          [39m[1m[2m    2.54 kB[22m[1m[22m[2m │ gzip:   1.10 kB[22m[2m │ map:     4.09 kB[22m
+[2mdist/admin/[22m[36mtransferTokens-CeXBOv8T.js        [39m[1m[2m    2.59 kB[22m[1m[22m[2m │ gzip:   0.67 kB[22m[2m │ map:     5.99 kB[22m
+[2mdist/admin/[22m[36museWebhooks-CeQ6X5FT.js           [39m[1m[2m    2.85 kB[22m[1m[22m[2m │ gzip:   0.85 kB[22m[2m │ map:     8.06 kB[22m
+[2mdist/admin/[22m[36mSSOProviders-nCeEldEQ.js          [39m[1m[2m    3.16 kB[22m[1m[22m[2m │ gzip:   1.00 kB[22m[2m │ map:     6.54 kB[22m
+[2mdist/admin/[22m[36mconstants-M0RVrJFl.js             [39m[1m[2m    3.63 kB[22m[1m[22m[2m │ gzip:   1.09 kB[22m[2m │ map:     6.47 kB[22m
+[2mdist/admin/[22m[36mAdminSeatInfo-BiRsi5oc.js         [39m[1m[2m    3.97 kB[22m[1m[22m[2m │ gzip:   1.49 kB[22m[2m │ map:     6.49 kB[22m
+[2mdist/admin/[22m[36mListPage-CsJo6ebL.js              [39m[1m[2m    4.08 kB[22m[1m[22m[2m │ gzip:   1.47 kB[22m[2m │ map:     5.92 kB[22m
+[2mdist/admin/[22m[36mSelectRoles-CIOWmS2a.js           [39m[1m[2m    4.25 kB[22m[1m[22m[2m │ gzip:   1.44 kB[22m[2m │ map:     8.51 kB[22m
+[2mdist/admin/[22m[36mInstalledPlugins-CTsovDYg.js      [39m[1m[2m    4.93 kB[22m[1m[22m[2m │ gzip:   1.39 kB[22m[2m │ map:     8.02 kB[22m
+[2mdist/admin/[22m[36mUseCasePage-DROMPX6m.js           [39m[1m[2m    6.27 kB[22m[1m[22m[2m │ gzip:   1.94 kB[22m[2m │ map:    10.80 kB[22m
+[2mdist/admin/[22m[36mListView-2X__Lqb8.js              [39m[1m[2m    7.70 kB[22m[1m[22m[2m │ gzip:   2.19 kB[22m[2m │ map:    13.32 kB[22m
+[2mdist/admin/[22m[36mTable-DzAeKb71.js                 [39m[1m[2m    7.79 kB[22m[1m[22m[2m │ gzip:   2.41 kB[22m[2m │ map:    17.30 kB[22m
+[2mdist/admin/[22m[36mListView-7r-R-Igx.js              [39m[1m[2m    7.90 kB[22m[1m[22m[2m │ gzip:   2.20 kB[22m[2m │ map:    14.06 kB[22m
+[2mdist/admin/[22m[36mLayout-CYL7ompI.js                [39m[1m[2m    8.03 kB[22m[1m[22m[2m │ gzip:   2.57 kB[22m[2m │ map:    17.34 kB[22m
+[2mdist/admin/[22m[36madmin-CoWMk1La.js                 [39m[1m[2m    9.99 kB[22m[1m[22m[2m │ gzip:   2.47 kB[22m[2m │ map:    28.21 kB[22m
+[2mdist/admin/[22m[36mSingleSignOnPage-DHHmCg72.js      [39m[1m[2m   10.58 kB[22m[1m[22m[2m │ gzip:   2.73 kB[22m[2m │ map:    19.43 kB[22m
+[2mdist/admin/[22m[36mcs-DeS9DzIq.js                    [39m[1m[2m   11.21 kB[22m[1m[22m[2m │ gzip:   3.94 kB[22m[2m │ map:     0.27 kB[22m
+[2mdist/admin/[22m[36mListPage-CON5aN9T.js              [39m[1m[2m   11.31 kB[22m[1m[22m[2m │ gzip:   2.93 kB[22m[2m │ map:    22.97 kB[22m
+[2mdist/admin/[22m[36mEditPage-CzZ0WCGB.js              [39m[1m[2m   11.49 kB[22m[1m[22m[2m │ gzip:   2.96 kB[22m[2m │ map:    20.86 kB[22m
+[2mdist/admin/[22m[36mCreatePage-CinCu6jj.js            [39m[1m[2m   11.74 kB[22m[1m[22m[2m │ gzip:   2.96 kB[22m[2m │ map:    21.27 kB[22m
+[2mdist/admin/[22m[36mvi-UeRpPdvI.js                    [39m[1m[2m   12.46 kB[22m[1m[22m[2m │ gzip:   4.39 kB[22m[2m │ map:     0.30 kB[22m
+[2mdist/admin/[22m[36mEditPage-Djuj3Xmm.js              [39m[1m[2m   12.54 kB[22m[1m[22m[2m │ gzip:   3.21 kB[22m[2m │ map:    22.62 kB[22m
+[2mdist/admin/[22m[36mEditView-5fAzDGcb.js              [39m[1m[2m   13.16 kB[22m[1m[22m[2m │ gzip:   3.27 kB[22m[2m │ map:    25.56 kB[22m
+[2mdist/admin/[22m[36muk-DHmepDW6.js                    [39m[1m[2m   13.25 kB[22m[1m[22m[2m │ gzip:   5.06 kB[22m[2m │ map:     0.31 kB[22m
+[2mdist/admin/[22m[36mTokenTypeSelect-Chmqi5KH.js       [39m[1m[2m   13.41 kB[22m[1m[22m[2m │ gzip:   3.13 kB[22m[2m │ map:    27.79 kB[22m
+[2mdist/admin/[22m[36mms-C-JB0-h1.js                    [39m[1m[2m   13.43 kB[22m[1m[22m[2m │ gzip:   4.12 kB[22m[2m │ map:     0.31 kB[22m
+[2mdist/admin/[22m[36mpt-CEcd6cjN.js                    [39m[1m[2m   13.84 kB[22m[1m[22m[2m │ gzip:   4.36 kB[22m[2m │ map:     0.31 kB[22m
+[2mdist/admin/[22m[36mListPage-Dht1du1x.js              [39m[1m[2m   15.70 kB[22m[1m[22m[2m │ gzip:   3.13 kB[22m[2m │ map:    27.96 kB[22m
+[2mdist/admin/[22m[36mProfilePage-DjRVFSLN.js           [39m[1m[2m   15.70 kB[22m[1m[22m[2m │ gzip:   3.46 kB[22m[2m │ map:    29.18 kB[22m
+[2mdist/admin/[22m[36mth-CPx6wf0M.js                    [39m[1m[2m   17.96 kB[22m[1m[22m[2m │ gzip:   6.37 kB[22m[2m │ map:     0.39 kB[22m
+[2mdist/admin/[22m[36mListPage-DJkDNKOl.js              [39m[1m[2m   18.79 kB[22m[1m[22m[2m │ gzip:   4.37 kB[22m[2m │ map:    38.43 kB[22m
+[2mdist/admin/[22m[36mid-BX77nhRG.js                    [39m[1m[2m   19.08 kB[22m[1m[22m[2m │ gzip:   5.39 kB[22m[2m │ map:     0.40 kB[22m
+[2mdist/admin/[22m[36mhe-kuscdOPI.js                    [39m[1m[2m   19.09 kB[22m[1m[22m[2m │ gzip:   6.31 kB[22m[2m │ map:     0.42 kB[22m
+[2mdist/admin/[22m[36mno-DU4xtEmk.js                    [39m[1m[2m   19.48 kB[22m[1m[22m[2m │ gzip:   5.69 kB[22m[2m │ map:     0.41 kB[22m
+[2mdist/admin/[22m[36mit-Br3eqqDa.js                    [39m[1m[2m   19.88 kB[22m[1m[22m[2m │ gzip:   5.72 kB[22m[2m │ map:     0.41 kB[22m
+[2mdist/admin/[22m[36mListPage-DjuFRBhx.js              [39m[1m[2m   21.91 kB[22m[1m[22m[2m │ gzip:   4.87 kB[22m[2m │ map:    43.83 kB[22m
+[2mdist/admin/[22m[36mko-CS08pZ0z.js                    [39m[1m[2m   24.88 kB[22m[1m[22m[2m │ gzip:   8.69 kB[22m[2m │ map:     0.55 kB[22m
+[2mdist/admin/[22m[36mja-CmifbkZD.js                    [39m[1m[2m   25.89 kB[22m[1m[22m[2m │ gzip:   9.13 kB[22m[2m │ map:     0.55 kB[22m
+[2mdist/admin/[22m[36mdk-Dy9JFy9v.js                    [39m[1m[2m   28.64 kB[22m[1m[22m[2m │ gzip:   7.88 kB[22m[2m │ map:     0.55 kB[22m
+[2mdist/admin/[22m[36mEditPage-o11xwcnG.js              [39m[1m[2m   29.13 kB[22m[1m[22m[2m │ gzip:   6.49 kB[22m[2m │ map:    62.64 kB[22m
+[2mdist/admin/[22m[36mgu-Hc5YzUuw.js                    [39m[1m[2m   29.91 kB[22m[1m[22m[2m │ gzip:   9.83 kB[22m[2m │ map:     0.53 kB[22m
+[2mdist/admin/[22m[36mApplicationInfoPage-BfZN1EKX.js   [39m[1m[2m   30.42 kB[22m[1m[22m[2m │ gzip:   5.93 kB[22m[2m │ map:    56.46 kB[22m
+[2mdist/admin/[22m[36mEditViewPage-BYGUYLJ3.js          [39m[1m[2m   31.18 kB[22m[1m[22m[2m │ gzip:   6.77 kB[22m[2m │ map:    67.47 kB[22m
+[2mdist/admin/[22m[36msk-CbJVofN-.js                    [39m[1m[2m   31.48 kB[22m[1m[22m[2m │ gzip:   8.92 kB[22m[2m │ map:     0.60 kB[22m
+[2mdist/admin/[22m[36mzh-Bhpup4vu.js                    [39m[1m[2m   33.70 kB[22m[1m[22m[2m │ gzip:  11.95 kB[22m[2m │ map:     0.74 kB[22m
+[2mdist/admin/[22m[36mpl-Bf4D5Q8_.js                    [39m[1m[2m   35.52 kB[22m[1m[22m[2m │ gzip:  10.37 kB[22m[2m │ map:     0.63 kB[22m
+[2mdist/admin/[22m[36mhi-ChZ-xy57.js                    [39m[1m[2m   35.62 kB[22m[1m[22m[2m │ gzip:  11.93 kB[22m[2m │ map:     0.63 kB[22m
+[2mdist/admin/[22m[36msa--UlKNdfY.js                    [39m[1m[2m   36.16 kB[22m[1m[22m[2m │ gzip:  12.12 kB[22m[2m │ map:     0.63 kB[22m
+[2mdist/admin/[22m[36mde-CxVS71Os.js                    [39m[1m[2m   36.25 kB[22m[1m[22m[2m │ gzip:  10.01 kB[22m[2m │ map:     0.63 kB[22m
+[2mdist/admin/[22m[36mca-lypqY0nt.js                    [39m[1m[2m   36.69 kB[22m[1m[22m[2m │ gzip:  10.19 kB[22m[2m │ map:     0.63 kB[22m
+[2mdist/admin/[22m[36mml-CzFKbt9H.js                    [39m[1m[2m   37.72 kB[22m[1m[22m[2m │ gzip:  12.25 kB[22m[2m │ map:     0.63 kB[22m
+[2mdist/admin/[22m[36mMarketplacePage-DIx8GWAp.js       [39m[1m[2m   37.76 kB[22m[1m[22m[2m │ gzip:   8.22 kB[22m[2m │ map:    77.15 kB[22m
+[2mdist/admin/[22m[36mfr-ClHlHI4r.js                    [39m[1m[2m   38.45 kB[22m[1m[22m[2m │ gzip:  10.02 kB[22m[2m │ map:     0.67 kB[22m
+[2mdist/admin/[22m[36mtr-hC_m0V8Q.js                    [39m[1m[2m   38.91 kB[22m[1m[22m[2m │ gzip:  11.03 kB[22m[2m │ map:     0.70 kB[22m
+[2mdist/admin/[22m[36mzh-Hans-BlfT-iYf.js               [39m[1m[2m   39.03 kB[22m[1m[22m[2m │ gzip:  13.27 kB[22m[2m │ map:     0.84 kB[22m
+[2mdist/admin/[22m[36mpt-BR-BFq-a8-C.js                 [39m[1m[2m   41.44 kB[22m[1m[22m[2m │ gzip:  11.26 kB[22m[2m │ map:     0.71 kB[22m
+[2mdist/admin/[22m[36mes-C-MB13Am.js                    [39m[1m[2m   42.33 kB[22m[1m[22m[2m │ gzip:  11.51 kB[22m[2m │ map:     0.71 kB[22m
+[2mdist/admin/[22m[36msv-BqRXfruc.js                    [39m[1m[2m   42.68 kB[22m[1m[22m[2m │ gzip:  11.52 kB[22m[2m │ map:     0.74 kB[22m
+[2mdist/admin/[22m[36mnl-gUEC_dKT.js                    [39m[1m[2m   44.09 kB[22m[1m[22m[2m │ gzip:  11.77 kB[22m[2m │ map:     0.74 kB[22m
+[2mdist/admin/[22m[36mhu-lwp6bYbA.js                    [39m[1m[2m   44.53 kB[22m[1m[22m[2m │ gzip:  12.48 kB[22m[2m │ map:     0.74 kB[22m
+[2mdist/admin/[22m[36meu-CTGdmY94.js                    [39m[1m[2m   44.74 kB[22m[1m[22m[2m │ gzip:  11.61 kB[22m[2m │ map:     0.74 kB[22m
+[2mdist/admin/[22m[36mTheme-B3Vl7PO-.js                 [39m[1m[2m   48.18 kB[22m[1m[22m[2m │ gzip:  11.32 kB[22m[2m │ map:   139.71 kB[22m
+[2mdist/admin/[22m[36mAuthenticatedLayout-0WpKtKmg.js   [39m[1m[2m   52.85 kB[22m[1m[22m[2m │ gzip:  15.01 kB[22m[2m │ map:    94.43 kB[22m
+[2mdist/admin/[22m[36mru-Dwf09uUc.js                    [39m[1m[2m   54.25 kB[22m[1m[22m[2m │ gzip:  16.36 kB[22m[2m │ map:     0.86 kB[22m
+[2mdist/admin/[22m[36men-CDbUV7mF.js                    [39m[1m[2m   54.49 kB[22m[1m[22m[2m │ gzip:  13.10 kB[22m[2m │ map:     0.90 kB[22m
+[2mdist/admin/[22m[36mar-BX4l-gGG.js                    [39m[1m[2m   57.91 kB[22m[1m[22m[2m │ gzip:  16.91 kB[22m[2m │ map:     0.95 kB[22m
+[2mdist/admin/[22m[36mPermissions-CFMbSqfB.js           [39m[1m[2m   76.97 kB[22m[1m[22m[2m │ gzip:  14.19 kB[22m[2m │ map:   176.63 kB[22m
+[2mdist/admin/[22m[36mindex-EeNFKp50.js                 [39m[1m[2m  198.16 kB[22m[1m[22m[2m │ gzip:  40.47 kB[22m[2m │ map:   471.60 kB[22m
+[2mdist/admin/[22m[36mtest.js                           [39m[1m[33m1,072.63 kB[39m[22m[2m │ gzip: 226.41 kB[22m[2m │ map: 2,067.64 kB[22m
+[32m✓ built in 1m 11s[39m

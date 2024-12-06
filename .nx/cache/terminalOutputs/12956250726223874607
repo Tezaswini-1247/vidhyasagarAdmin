@@ -1,0 +1,27 @@
+- Verifying package.json 
+
+[32m✔[39m Verified package.json
+- Creating build context 
+
+[32m✔[39m Created build context
+Building type files:
+   entries:
+    – [32m@strapi\provider-upload-cloudinary [39m[36m./src/index.ts[39m [90m->[39m [36m./dist/index.d.ts[39m
+[32m[SUCCESS] [39m Built types, entries:
+    [34m@strapi\provider-upload-cloudinary[39m: ./src/index.ts -> ./dist/index.d.ts
+Building javascript files:
+  format: cjs
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\provider-upload-cloudinary: [39m[36m./src/index.ts[39m [90m→[39m [36m./dist/index.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: cjs)
+    [34m@strapi\provider-upload-cloudinary[39m: ./src/index.ts -> ./dist/index.js
+Building javascript files:
+  format: es
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\provider-upload-cloudinary: [39m[36m./src/index.ts[39m [90m→[39m [36m./dist/index.mjs[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: es)
+    [34m@strapi\provider-upload-cloudinary[39m: ./src/index.ts -> ./dist/index.mjs

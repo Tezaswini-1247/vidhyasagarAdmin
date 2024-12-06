@@ -1,0 +1,45 @@
+- Verifying package.json 
+
+[32m✔[39m Verified package.json
+- Creating build context 
+
+[32m✔[39m Created build context
+Building type files:
+   entries:
+    – [32m@strapi\content-releases\admin\src\index.ts [39m[36m./admin/src/index.ts[39m [90m->[39m [36m./dist/admin/src/index.d.ts[39m
+    – [32m@strapi\content-releases\server\src\index.ts [39m[36m./server/src/index.ts[39m [90m->[39m [36m./dist/server/src/index.d.ts[39m
+[32m[SUCCESS] [39m Built types, entries:
+    [34m@strapi\content-releases\admin\src\index.ts[39m: ./admin/src/index.ts -> ./dist/admin/src/index.d.ts
+    [34m@strapi\content-releases\server\src\index.ts[39m: ./server/src/index.ts -> ./dist/server/src/index.d.ts
+Building javascript files:
+  format: cjs
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\content-releases\bundle_cjs_0: [39m[36m./admin/src/index.ts[39m [90m→[39m [36m./dist/admin/index.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: cjs)
+    [34m@strapi\content-releases\bundle_cjs_0[39m: ./admin/src/index.ts -> ./dist/admin/index.js
+Building javascript files:
+  format: es
+   target:
+[36m    - esnext[39m
+   entries:
+    – [32m@strapi\content-releases\bundle_esm_0: [39m[36m./admin/src/index.ts[39m [90m→[39m [36m./dist/admin/index.mjs[39m
+[32m[SUCCESS] [39m Built javascript (runtime: web – target: es)
+    [34m@strapi\content-releases\bundle_esm_0[39m: ./admin/src/index.ts -> ./dist/admin/index.mjs
+Building javascript files:
+  format: cjs
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\content-releases\bundle_cjs_1: [39m[36m./server/src/index.ts[39m [90m→[39m [36m./dist/server/index.js[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: cjs)
+    [34m@strapi\content-releases\bundle_cjs_1[39m: ./server/src/index.ts -> ./dist/server/index.js
+Building javascript files:
+  format: es
+   target:
+[36m    - node18.0[39m
+   entries:
+    – [32m@strapi\content-releases\bundle_esm_1: [39m[36m./server/src/index.ts[39m [90m→[39m [36m./dist/server/index.mjs[39m
+[32m[SUCCESS] [39m Built javascript (runtime: node – target: es)
+    [34m@strapi\content-releases\bundle_esm_1[39m: ./server/src/index.ts -> ./dist/server/index.mjs

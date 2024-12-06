@@ -1,0 +1,13 @@
+{
+    "name": "@strapi/plugin-pg-data-display",
+    "version": "1.0.0",
+    "description": "A plugin to display PostgreSQL data in Strapi admin panel",
+    "main": "strapi-server.js",
+    "strapi": {
+        "kind": "plugin",
+        "main": "strapi-server.js"
+    },
+    "dependencies": {
+        "pg": "^8.8.0"
+    }
+}

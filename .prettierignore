@@ -1,0 +1,6 @@
+coverage
+test-apps
+dist
+build
+.strapi
+/.nx/cache
