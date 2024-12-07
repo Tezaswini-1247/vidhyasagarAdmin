@@ -207,7 +207,7 @@ describe('<EditAssetDialog />', () => {
 
       fireEvent.click(screen.getByRole('button', { name: 'Download' }));
       expect(downloadFile).toHaveBeenCalledWith(
-        'http://192.168.20.14:1337/uploads/Screenshot_2_5d4a574d61.png',
+        `${process.env.REACT_APP_API_URL}/uploads/Screenshot_2_5d4a574d61.png`,
         'Screenshot 2.png'
       );
     });

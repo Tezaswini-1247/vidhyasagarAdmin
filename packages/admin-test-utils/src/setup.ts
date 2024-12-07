@@ -81,7 +81,7 @@ window.console = {
  * -----------------------------------------------------------------------------------------------*/
 
 window.strapi = {
-  backendURL: 'http://192.168.20.14:1337',
+  backendURL: `${process.env.REACT_APP_API_URL}`,
   isEE: false,
   features: {
     SSO: 'sso',

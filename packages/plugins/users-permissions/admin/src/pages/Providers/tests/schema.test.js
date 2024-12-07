@@ -42,7 +42,7 @@ describe('schema without subdomain', () => {
       'http://example.com/callback#fragment',
       'https://sub.example.com/path/to/callback',
       'http://example.com/callback?param1=value1&param2=value2',
-      'http://192.168.20.14:1337/api/auth/example-provider/callback',
+      `${process.env.REACT_APP_API_URL}/api/auth/example-provider/callback`,
       'some://link',
     ];
 

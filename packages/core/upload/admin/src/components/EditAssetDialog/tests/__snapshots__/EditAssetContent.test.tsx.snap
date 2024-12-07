@@ -754,7 +754,7 @@ exports[`<EditAssetDialog /> renders and matches the snapshot 1`] = `
                   >
                     <img
                       alt="Screenshot 2.png"
-                      src="http://192.168.20.14:1337/uploads/thumbnail_Screenshot_2_5d4a574d61.png"
+                      src=`${process.env.REACT_APP_API_URL}/uploads/thumbnail_Screenshot_2_5d4a574d61.png`
                     />
                   </div>
                   <div

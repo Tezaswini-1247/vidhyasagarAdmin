@@ -334,7 +334,7 @@ exports[`MediaLibrary / AssetList snapshots the asset list 1`] = `
                 alt="strapi-cover_1fabc982ce.png"
                 aria-hidden="true"
                 class="c14"
-                src="http://192.168.20.14:1337/uploads/thumbnail_strapi_cover_1fabc982ce_5b43615ed5.png?updatedAt=2021-09-14T07%3A32%3A50.816Z"
+                src=`${process.env.REACT_APP_API_URL}/uploads/thumbnail_strapi_cover_1fabc982ce_5b43615ed5.png?updatedAt=2021-09-14T07%3A32%3A50.816Z`
               />
             </div>
           </div>
@@ -437,7 +437,7 @@ exports[`MediaLibrary / AssetList snapshots the asset list 1`] = `
                 >
                   <video
                     crossorigin="anonymous"
-                    src="http://192.168.20.14:1337/uploads/mov_bbb_2f3907f7aa.mp4"
+                    src=`${process.env.REACT_APP_API_URL}/uploads/mov_bbb_2f3907f7aa.mp4`
                   >
                     <source
                       type="video/mp4"

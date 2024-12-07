@@ -25,7 +25,7 @@ describe('getFetchClient', () => {
     const { data } = await fetchClient.get('test-fetch-client');
     expect(data).toEqual({ data: 'success response' });
     expect(window.fetch).toHaveBeenCalledWith(
-      'http://192.168.20.14:1337/test-fetch-client',
+      `${process.env.REACT_APP_API_URL}/test-fetch-client`,
       expect.anything()
     );
   });
@@ -64,7 +64,7 @@ describe('getFetchClient', () => {
     });
     expect(data).toEqual({ data: 'success response' });
     expect(window.fetch).toHaveBeenCalledWith(
-      'http://192.168.20.14:1337/test-fetch-client?page=1&pageSize=10&sort=short_text:ASC&filters[$and][0][biginteger][$eq]=3&filters[$and][1][short_text][$eq]=test&locale=en',
+      `${process.env.REACT_APP_API_URL}/test-fetch-client?page=1&pageSize=10&sort=short_text:ASC&filters[$and][0][biginteger][$eq]=3&filters[$and][1][short_text][$eq]=test&locale=en`,
       expect.anything()
     );
   });

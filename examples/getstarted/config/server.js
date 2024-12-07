@@ -5,7 +5,7 @@ const cronTasks = require('./src/cron-tasks');
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  url: 'http://192.168.20.14:1337',
+  url: `${process.env.REACT_APP_API_URL}`,
   cron: {
     enabled: true,
     tasks: cronTasks,

@@ -79,7 +79,7 @@ module.exports = {
   ],
   testMatch: ['**/tests/**/?(*.)+(spec|test).[jt]s?(x)'],
   testEnvironmentOptions: {
-    url: 'http://192.168.20.14:1337/admin',
+    url: `${process.env.REACT_APP_API_URL}/admin`,
   },
   // Use `jest-watch-typeahead` version 0.6.5. Newest version 1.0.0 does not support jest@26
   // Reference: https://github.com/jest-community/jest-watch-typeahead/releases/tag/v1.0.0

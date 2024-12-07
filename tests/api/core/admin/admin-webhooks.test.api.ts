@@ -87,7 +87,7 @@ describe('Admin API Webhooks', () => {
     const originalNodeEnv = process.env.NODE_ENV;
     process.env.NODE_ENV = 'production';
 
-    const { status } = await createWebhook({ url: 'http://192.168.20.14:1337' });
+    const { status } = await createWebhook({ url: `${process.env.REACT_APP_API_URL}` });
     const { status: statusInt } = await createWebhook({ url: '私の.家' });
 
     process.env.NODE_ENV = originalNodeEnv;
